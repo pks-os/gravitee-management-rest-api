@@ -39,6 +39,9 @@ public enum Key {
     PORTAL_APIS_SHOW_TAGS_IN_APIHEADER("portal.apis.apiheader.showtags.enabled", "false"),
     PORTAL_APIS_SHOW_VIEWS_IN_APIHEADER("portal.apis.apiheader.showviews.enabled", "false"),
     PORTAL_DASHBOARD_WIDGETS("portal.dashboard.widgets"),
+    PORTAL_UPLOAD_MEDIA_ENABLED("portal.uploadMedia.enabled", "false"),
+    PORTAL_UPLOAD_MEDIA_MAXSIZE("portal.uploadMedia.maxSizeInOctet", "1000000"),
+
 
     MANAGEMENT_TITLE("management.title", "Gravitee.io Management"),
 
@@ -78,7 +81,13 @@ public enum Key {
     API_QUALITY_METRICS_VIEWS_WEIGHT("api.quality.metrics.views.weight", "0"),
     API_QUALITY_METRICS_LABELS_WEIGHT("api.quality.metrics.labels.weight", "0"),
 
-    LOGGING_DEFAULT_MAX_DURATION("logging.default.max.duration", "0");
+    ALERT_ENABLED("alert.enabled", "false"),
+
+    LOGGING_DEFAULT_MAX_DURATION("logging.default.max.duration", "0"),
+    LOGGING_AUDIT_ENABLED("logging.audit.enabled", "false"),
+    LOGGING_USER_DISPLAYED("logging.user.displayed", "false"),
+
+    ANALYTICS_CLIENT_TIMEOUT("analytics.client.timeout", "30000");
 
     String key;
     String defaultValue;
